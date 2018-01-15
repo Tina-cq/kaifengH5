@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "format-detection" content="telephone = no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<!--日历-->
+<div class="calendarBox">
+<div id="cale" class="calendar clearfix">
+    <div class="arrowBox">
+        <div>
+            <img id="pre" class="prevBtn" src="images/arrow_top.png" alt=""/>
+            <img id="next" class="nextBtn" src="images/arrow_btm.png" alt=""/>
+        </div>
+        <div id="complete">完成</div>
+    </div>
+    <h4 id="tit" class="title"></h4>
+    <ul class="week">
+        <li>日</li>
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+
+    </ul>
+    <ul id="date_list" class="dateUl clearfix">
+
+    </ul>
+</div>
+</div>
+<!--日历结束-->
+
+<div class="top">
+    <header>
+        <div><span style="padding-right: 3px;">返回</span><span>关闭</span></div>
+        凯丰 平值期权报价
+        <img src="images/ellipsis.png" alt=""/>
+    </header>
+    <div class="logoBox">
+        <img src="images/logo.png" alt=""/>
+        <div>
+            <span>平值期权</span>
+            <span id="data">2017-11-30</span>
+        </div>
+    </div>
+    <table class="thead">
+        <tr>
+            <td>品种</td>
+            <td>标的</td>
+            <td>标的价格</td>
+            <td>买价</td>
+            <td>卖价</td>
+        </tr>
+
+    </table>
+</div>
+<div class="middle">
+    <table>
+        <tbody>
+        <tr id="tr">
+            <td>PTA</td>
+            <td>TA801</td>
+            <td style="min-width: 60px;">278.45</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr class="green">
+            <td>玉米淀粉</td>
+            <td>TA80111</td>
+            <td>5145</td>
+            <td>70.0311</td>
+            <td>81.9133</td>
+        </tr>
+        <tr>
+            <td>铁矿石</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪金</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr class="red">
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr class="red">
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>棉花</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>螺纹钢</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>铁矿石</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr class="green">
+            <td>沪金</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr  class="red">
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>棉花</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>螺纹钢</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>铁矿石</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪金</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr  class="green">
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>棉花</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>螺纹钢</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>铁矿石</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪金</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr  class="red">
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>棉花last</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="footer">
+    <div>
+        <span class="userImg"><i><img src="images/cat.jpg" alt=""/></i><b>bgcvbcSulli</b></span>
+        <span class="consulting"><img src="images/searve.png" alt=""/>咨询</span>
+    </div>
+    <div>@2017-10-31</div>
+</div>
+
+<!--咨询提示框-->
+<div class="modelBg"></div>
+<div class="consultingCont">
+    <ul>
+        <li><i><img src="images/cat.jpg" alt=""></i>张小姐</li>
+        <li><i><img src="images/cat.jpg" alt=""></i>李小姐</li>
+        <li><i><img src="images/tip.png" alt=""></i>简易提示</li>
+    </ul>
+    <img class="arrow" src="images/arrow.png" alt=""/>
+</div>
+<!--咨询提示框-->
+
+</body>
+</html>
+<script src="js/calendar.js"></script>
+
+<script>
+    if($(".middle").find("tr").length>0){
+
+        $(".thead td").each(function(){
+            var wid=$("#tr td").eq($(this).index()).width();
+            $(this).width(wid)
+        });
+    }
+    else{
+        $(".thead td").each(function(){
+            $(this).css("width",100)
+        });
+    }
+
+
+
+    $("#data").click(function(){
+        $(".calendarBox").fadeIn();
+    });
+    $("#complete").click(function(){
+        $(".calendarBox").fadeOut();
+    });
+
+
+    //20171219增加  点击咨询
+    var flag=true;
+
+    $(".consulting").click(function(){
+        if(flag){
+            $(".consultingCont").show();
+            $(".modelBg").show();
+            flag=!flag;
+            $("body").css("overflow","hidden");
+        }
+    });
+
+
+    $(".modelBg").click(function(){
+        $(".consultingCont").hide();
+        $(".modelBg").hide();
+        flag=!flag;
+        $("body").css("overflow","auto");
+    });
+
+
+    //**********************20171228
+    var consultingLeft=$(".consulting").offset().left;
+    var consultingContWid=$(".consultingCont").width()/2;
+    $(".consultingCont").css("left",consultingLeft-consultingContWid+15)
+</script>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "format-detection" content="telephone = no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<!--日历-->
+<div class="calendarBox">
+<div id="cale" class="calendar clearfix">
+    <div class="arrowBox">
+        <div>
+            <img id="pre" class="prevBtn" src="images/arrow_top.png" alt=""/>
+            <img id="next" class="nextBtn" src="images/arrow_btm.png" alt=""/>
+        </div>
+        <div id="complete">完成</div>
+    </div>
+    <h4 id="tit" class="title"></h4>
+    <ul class="week">
+        <li>日</li>
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+
+    </ul>
+    <ul id="date_list" class="dateUl clearfix">
+
+    </ul>
+</div>
+</div>
+<!--日历结束-->
+
+<!--交易所 弹框-->
+<div class="czcBox">
+    <div class="czcInner">
+        <div class="arrowBox">
+            <div id="completeCzc">完成</div>
+        </div>
+        <div class="cacSelectBox clearfix">
+            <ul>
+                <li class="activeCzcLi"><span>firstCZC</span></li>
+                <li><span>DCE</span></li>
+                <li><span>SHE</span></li>
+                <li><span>CZC</span></li>
+                <li><span>DCE</span></li>
+                <li><span>SHE</span></li>
+                <li><span>lastCZC</span></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--交易所 弹框结束-->
+
+<!--挂钩标的 弹框-->
+<div class="Ta808Box">
+    <div class="Ta808Inner">
+        <div class="arrowBox">
+            <div id="completeTa808">完成</div>
+        </div>
+        <div class="Ta808SelectBox clearfix">
+            <ul class="Ta808SelectBoxUl">
+                <li>
+                    <span>TA</span>
+                    <ul class="innerUl">
+                        <li style="background: #c4c4c5;"><span class="activeLi">TA801</span></li>
+                        <li><span>TA805</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>SR</span>
+                    <ul class="innerUl">
+                        <li><span>SR801</span></li>
+                        <li><span>SR805</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>SHE</span>
+                    <ul class="innerUl">
+                        <li><span>SHE801</span></li>
+                        <li><span>SHE805</span></li>
+                    </ul>
+                </li>
+                <li><span>CZC</span></li>
+                <li><span>DCE</span></li>
+                <li><span>SHE</span></li>
+                <li><span>lastCZC</span></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--挂钩标的 弹框结束-->
+
+<div class="top top02">
+    <header>
+        <div><span style="padding-right: 3px;">返回</span><span>关闭</span></div>
+        凯丰 品种T型报价
+        <img src="images/ellipsis.png" alt=""/>
+    </header>
+    <div class="logoBox select">
+        <ul class="clearfix">
+            <li>
+                <span>交易所</span><br/>
+                <div id="CZC">CZC</div>
+            </li>
+            <li>
+                <span>挂钩标的</span><br/>
+                <div id="TA801">TA801</div>
+            </li>
+            <li>
+                <span>到期日 <img style="width: 12px;float: none;margin: 0;margin-top: 1px;" src="images/date3.png" alt=""/></span><br/>
+                <div id="data">2017-11-30</div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="riseFall clearfix">
+        <ul>
+            <li>看涨</li>
+            <li>5174</li>
+            <li>看跌</li>
+        </ul>
+    </div>
+
+    <table class="thead thead02 clearfix">
+        <tr>
+            <td>买价%</td>
+            <td>卖价%</td>
+            <td>行权价</td>
+            <td>买价%</td>
+            <td>卖价%</td>
+        </tr>
+    </table>
+</div>
+<div class="middle middle02">
+    <table>
+        <tbody>
+        <tr id="tr">
+            <td>first</td>
+            <td>TA801</td>
+            <td>278.45</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米淀粉</td>
+            <td>TA80111</td>
+            <td>5145</td>
+            <td>70.0311</td>
+            <td>81.9133</td>
+        </tr>
+        <tr>
+            <td>铁矿石</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪金</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td class="midPrice">5145dd</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td class="midPrice">5145dd</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>焦炭</td>
+            <td>TA801</td>
+            <td class="midPrice">5145dd</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>沪胶</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        <tr>
+            <td>棉花last</td>
+            <td>TA801</td>
+            <td>5145</td>
+            <td>70.03</td>
+            <td>81.91</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="footer">
+    <div>
+        <span class="userImg"><i><img src="images/cat.jpg" alt=""/></i><b>Sulli</b></span>
+        <span class="consulting"><img src="images/searve.png" alt=""/>咨询</span>
+    </div>
+    <div>@2017-10-31</div>
+</div>
+
+<!--咨询提示框-->
+<div class="modelBg"></div>
+<div class="consultingCont">
+    <ul>
+        <li><i><img src="images/cat.jpg" alt=""></i>张小姐</li>
+        <li><i><img src="images/cat.jpg" alt=""></i>李小姐</li>
+        <li><i><img src="images/tip.png" alt=""></i>简易提示</li>
+    </ul>
+    <img class="arrow" src="images/arrow.png" alt=""/>
+</div>
+<!--咨询提示框-->
+
+</body>
+</html>
+<script src="js/calendar.js"></script>
+
+<script>
+    if($(".middle").find("tr").length>0){
+        $(".thead td").each(function(){
+            var wid=$("#tr td").eq($(this).index()).width();
+            $(this).width(wid)
+        });
+    }
+    else{
+        $(".thead td").each(function(){
+            $(this).css("width",100)
+        });
+    }
+
+    //************************************************************日历
+    $("#data").click(function(){
+        $(".calendarBox").fadeIn();
+    });
+    $("#complete").click(function(){
+        $(".calendarBox").fadeOut();
+    });
+
+
+    //**************************************************************CZC
+    $("#CZC").click(function(){
+        $(".czcBox").fadeIn();
+    });
+
+    $(".cacSelectBox li").click(function(){
+        $(".cacSelectBox li").removeClass("activeCzcLi");
+        $(this).addClass("activeCzcLi");
+    });
+
+    $("#completeCzc").click(function(){
+        var html=$(".cacSelectBox").find(".activeCzcLi span").html();
+        $("#CZC").html(html);
+        $(".czcBox").fadeOut();
+    });
+
+
+//    $("#completeCzc").click(function(){
+//        $(".cacSelectBox ul li").each(function(){
+//            if(Math.round($(this).position().top)>=50&&Math.round($(this).position().top)<=70){
+//                $("#CZC").html($(this).html());
+//            }
+//        });
+//        $(".czcBox").fadeOut();
+//
+//    });
+
+    //***************************************************************completeTa808
+    $("#TA801").click(function(){
+        $(".Ta808Box").fadeIn();
+    });
+
+    $(".Ta808SelectBoxUl li span").click(function(){
+
+        if($(this).next().length>0){
+            $(this).next().slideToggle();
+        }
+        else{
+//            console.log(123)
+            $(".Ta808SelectBoxUl li").css("background","rgba(0,0,0,0)");
+            $(".Ta808SelectBoxUl li span").removeClass("activeLi");
+            $(this).addClass("activeLi");
+            $(this).parent("li").css("background","#c4c4c5");
+        }
+
+    });
+
+    $(".innerUl li span").click(function(){
+        $(".Ta808SelectBoxUl li span").removeClass("activeLi");
+        $(this).addClass("activeLi");
+    });
+
+    $("#completeTa808").click(function(){
+        var html=$(".Ta808SelectBoxUl").find(".activeLi").html();
+//        console.log(html)
+        $("#TA801").html($(".Ta808SelectBoxUl").find(".activeLi").html());
+        $(".Ta808Box").fadeOut();
+
+    });
+
+
+    //20171219增加  点击咨询
+    var flag=true;
+
+    $(".consulting").click(function(){
+        if(flag){
+            $(".consultingCont").show();
+            $(".modelBg").show();
+            flag=!flag;
+            $("body").css("overflow","hidden");
+        }
+    });
+
+
+    $(".modelBg").click(function(){
+        $(".consultingCont").hide();
+        $(".modelBg").hide();
+        flag=!flag;
+        $("body").css("overflow","auto");
+    })
+
+    //**********************20171228
+    var consultingLeft=$(".consulting").offset().left;
+    var consultingContWid=$(".consultingCont").width()/2;
+    $(".consultingCont").css("left",consultingLeft-consultingContWid+15)
+</script>
